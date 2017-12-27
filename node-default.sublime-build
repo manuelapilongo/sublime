@@ -1,0 +1,13 @@
+{
+  "cmd": [
+    "node",
+    "$file"
+  ],
+  "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+  "selector": "source.js",
+  "shell": true,
+  "linux": {
+    "shell_cmd": "killall -q node; /home/`whoami`/.nvm/versions/node/`cat /home/\\`whoami\\`/.nvm/alias/default`/bin/node $file",
+  }
+}
+
